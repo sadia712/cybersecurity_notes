@@ -1,0 +1,55 @@
+## Scenario:
+A cyberattack disrupts the SCADA system of a regional power grid in India, causing widespread blackouts. The incident is traced to a malware infiltration via a phishing email sent to a technician.
+
+---
+
+## Question 1: Why is a Power Grid Classified Under CII?
+
+The power grid is classified under **Critical Information Infrastructure (CII)** because it supports the essential services of the nation and any disruption can lead to:
+
+- **National Security Threats** – Defense, communication, and emergency services rely on continuous power supply.
+- **Economic Disruption** – Industry, transport, and commerce collapse without electricity.
+- **Public Health and Safety Risks** – Hospitals, water plants, and traffic systems are power-dependent.
+
+In India, **Section 70 of the IT Act, 2000** defines CII as any computer resource whose incapacitation would impact national security, economy, or public order. The **National Critical Information Infrastructure Protection Centre (NCIIPC)** is responsible for securing CII sectors like energy, banking, telecom, and health.
+
+---
+
+## Question 2: How Do Cyber Threats to CII Differ from General IT Systems?
+
+| Criteria               | CII Systems (e.g., Power Grid)                      | General IT Systems                           |
+|------------------------|-----------------------------------------------------|----------------------------------------------|
+| **Impact**             | Nation-wide disruption, risk to life & economy      | Business loss, data theft, service downtime  |
+| **Attack Motivation**  | Terrorism, sabotage, cyberwarfare                   | Financial gain, data breach, ransomware      |
+| **Technologies Targeted** | SCADA, ICS, OT systems                              | Web servers, databases, user accounts        |
+| **Response Need**      | Real-time, fail-proof systems                       | High priority, but not always mission-critical|
+| **Legal Priority**     | Protected under national cybersecurity law          | General data protection and IT compliance    |
+
+Attacks on CII often exploit older or isolated systems like SCADA, which were not built for internet-facing threats and have limited security layers.
+
+---
+
+## Question 3: What Steps Should Be Taken to Strengthen CII Security in This Context?
+
+Following a phishing-based malware infiltration, the following **preventive and corrective steps** are critical:
+
+###  1. **Technical Controls**
+- Implement **network segmentation** to isolate OT from IT systems.
+- Use **multi-factor authentication (MFA)** and restrict remote access.
+- Regularly **patch SCADA and control systems**, even legacy ones.
+- Deploy **intrusion detection systems (IDS)** and **SIEM tools**.
+
+###  2. **Phishing & Human Error Protection**
+- Conduct frequent **cyber awareness training** for all employees.
+- Use **email filtering**, attachment scanning, and domain spoofing protection.
+- Implement **role-based access control** – technicians should have limited privileges.
+
+###  3. **Incident Response & Resilience**
+- Maintain a dedicated **Security Operations Center (SOC)** for CII monitoring.
+- Create and routinely test **incident response and disaster recovery plans**.
+- Keep **offline backups** and redundant systems to ensure service continuity.
+
+###  4. **Legal & Governance Framework**
+- Ensure full compliance with **NCIIPC guidelines** for CII.
+- Conduct periodic **audits and risk assessments**.
+- Collaborate with **CERT-In** and other national agencies for threat intelligence sharing.
