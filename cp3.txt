@@ -1,0 +1,51 @@
+##  Scenario:
+A major social media platform suffers a massive data breach. Sensitive user information such as passwords, private messages, and location histories is leaked and later found being sold on the dark web.
+
+---
+
+##Question 1: Classify the Types of Data Exposed (PII or Not)
+
+The following data types were exposed in the breach:
+
+| Data Type         | PII Classification | Explanation |
+|------------------|---------------------|-------------|
+| **Passwords**     | ✅ Yes               | Linked directly to user accounts and can lead to identity compromise. |
+| **Private Messages** | ✅ Yes           | May contain sensitive conversations and personal identifiers. |
+| **Location Histories** | ✅ Yes         | Can reveal real-time movements, home/work location, and behavior patterns. |
+| **Usernames**     | ⚠️ Possibly PII     | If usernames are real names or linked to identity, they are PII. |
+| **User Posts**    | ⚠️ Context-dependent | Public posts are not PII, but private posts can be. |
+
+
+
+## Question 2: Likely Technical and Human Errors That Caused the Breach
+
+###  Technical Errors:
+- **Weak or unencrypted password storage** (e.g., storing passwords in plaintext or with outdated hashing algorithms like MD5).
+- **Vulnerabilities in APIs** or mobile apps that were exploited for unauthorized access.
+- **Lack of multi-factor authentication (MFA)** for admin access or sensitive user actions.
+- **Improper access control** or misconfigured databases (e.g., exposed Elasticsearch clusters).
+
+###  Human Errors:
+- **Phishing attack** targeting employees with access privileges.
+- **Failure to apply security patches** or update vulnerable systems.
+- **Inadequate employee cybersecurity training** on social engineering.
+- **Negligent insider behavior** or weak internal monitoring of data usage.
+
+---
+
+##Question 3: How Does This Case Reflect the Broader Need for Cybersecurity?
+
+This breach underscores the **critical importance of cybersecurity** in today’s digital world, especially for platforms that manage massive amounts of user data. It reveals:
+
+### Key Lessons:
+- **PII is a prime target**: Threat actors seek data they can monetize or exploit for further attacks.
+- **Cybersecurity is not optional**: Platforms must prioritize security just like any other core business function.
+- **Users trust platforms with their digital lives**: Breaches erode trust and can have massive legal and reputational consequences.
+- **Compliance with regulations**: Such incidents may result in violations of global privacy laws like **GDPR**, **CCPA**, and India’s **PDPB**.
+
+### Broad Recommendations:
+- Implement **Zero Trust Architecture**.
+- Encrypt all sensitive data (in transit and at rest).
+- Enforce **least privilege access** policies.
+- Conduct regular **security audits** and **penetration tests**.
+- Raise awareness through continuous **employee training**.
