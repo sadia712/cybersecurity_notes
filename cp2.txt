@@ -1,0 +1,44 @@
+## Scenario:
+A hospital’s IT systems are infected by ransomware, locking access to patient records and halting ongoing surgeries. The attackers demand cryptocurrency payment to restore access to the systems.
+
+---
+
+## Question 1: What Cybersecurity Principles Are Violated Here (CIA Triad)?
+
+The **CIA Triad** represents the three fundamental principles of cybersecurity: **Confidentiality, Integrity, and Availability**. All three are violated in this scenario:
+| **Confidentiality** | Patient records may be exposed or accessed by unauthorized attackers. |
+| **Integrity** | Medical records could be altered, deleted, or tampered with during or after the attack. |
+| **Availability** | Hospital systems are locked; surgeries and critical care are disrupted due to inaccessibility of data. |
+
+---
+
+##Question 2: How Are PII and CII Involved in This Situation?
+
+### **PII (Personally Identifiable Information)**:
+- Includes patient names, medical histories, addresses, IDs, prescriptions, and test reports.
+- Exposure or misuse of PII can result in **identity theft**, **privacy breaches**, and **legal violations** (e.g., HIPAA in the U.S., PDPB in India).
+
+### **CII (Critical Information Infrastructure)**:
+- Hospitals, especially during emergencies (like pandemics), are considered **critical infrastructure**.
+- Disruption of health systems impacts **national safety**, emergency services, and public trust.
+- In India, health infrastructure may fall under **CII if declared by NCIIPC**.
+
+---
+
+##Question 3: Cybersecurity Framework the Hospital Should Adopt
+
+To prevent such attacks in the future, the hospital should adopt a robust cybersecurity framework that includes:
+
+### A. **Framework Recommendation**:
+**NIST Cybersecurity Framework (CSF)** – Widely adopted and adaptable for healthcare organizations.
+
+### B. **5 Core Functions of NIST CSF**
+
+| Function | Hospital Implementation |
+|----------|--------------------------|
+| **Identify** | Conduct risk assessments, classify assets (servers, EHR systems), and identify critical data. |
+| **Protect** | Implement firewalls, anti-malware, endpoint protection, encryption, and access control (MFA). |
+| **Detect** | Deploy real-time threat monitoring (SIEM), anomaly detection, and intrusion detection systems. |
+| **Respond** | Create an incident response plan (IRP), train staff for ransomware response, report incidents to CERT-In. |
+| **Recover** | Maintain offsite backups, disaster recovery plans (DRP), and ensure business continuity processes. |
+
